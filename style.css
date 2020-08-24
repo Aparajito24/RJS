@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white;
+  padding: 10%;
+}
+.TOTAL {
+  padding-left: 300px;
+}
+.Text {
+  font-size: 40px;
+  position: absolute;
+  padding-left: 50px;
+}
+button {
+  padding-right: 100px;
+  position: absolute;
+}
+
+.btn {
+  font-size: 30px;
+  padding: 10px 30px;
+  border: none;
+  background-color: red;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 220px;
+}
+span {
+  color: white;
+}
+.box {
+  height: 500px;
+  width: 400px;
+  background-color: red;
+  opacity: 0.6;
+  margin-top: 30px;
+  margin-left: 100px;
+}

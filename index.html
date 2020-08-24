@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RJS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="TOTAL">
+      <p class="Text">
+        Hello<br />
+        Hello Hello<br />
+        Hello Hello Hello<br />
+        Hello Hello Hello Hello<br />
+      </p>
+      <div class="box"></div>
+      <div class="button">
+        <button class="btn" data-color="Green"><span>Press</span></button>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelectorAll(".btn");
+      const box = document.querySelector(".box");
+
+      for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function () {
+          box.style.background = this.getAttribute("data-color");
+          for (let j = 0; j < btn.length; j++) {
+            btn[j].removeAttribute("style");
+          }
+          this.style.color = this.getAttribute("data-color");
+        });
+      }
+    </script>
+  </body>
+</html>
